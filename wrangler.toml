@@ -1,1 +1,20 @@
+name = "auth-inbox"
+main = "src/index.ts"
+compatibility_date = "2024-10-04"
+compatibility_flags = ["nodejs_compat"]
 
+[observability]
+enabled = true
+
+[vars]
+UseBark = "false"
+barkUrl = "https://api.day.app"
+barkTokens = "[token1, token2]"
+FrontEndAdminID = "admin"
+FrontEndAdminPassword = "6531306"
+GoogleAPIKey = "AIzaSyA2Rlxlr7IuzDfvSVxJkgvWK04LwaLUk0E"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "inbox-d1"
+database_id = "58874969-be49-43a7-8f36-366c4667febc"
