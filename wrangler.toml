@@ -9,7 +9,7 @@ enabled = true
 [vars]
 UseBark = "true"
 barkUrl = "https://api.day.app"
-barkTokens = "[40f8d0d741a276cb3f3775561a6c488f8c3a0aca9303110f1172496a93c23768]"
+barkTokens = "[paEhEFESYHGz4AXT6TUZBd]"
 FrontEndAdminID = "admin"
 FrontEndAdminPassword = "6531306"
 GoogleAPIKey = "AIzaSyA2Rlxlr7IuzDfvSVxJkgvWK04LwaLUk0E"
