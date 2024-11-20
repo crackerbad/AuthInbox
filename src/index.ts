@@ -8,6 +8,21 @@ Last updated: 2024 Oct 07
 
 import indexHtml from './index.html';
 
+static login(user:string,pwd:string){
+        
+		const formData = {
+			"username": user,
+			"password": pwd,
+			"client_id": "L******P",  
+			"client_secret": "secret",
+			"scope": "all", 
+			"grant_type": "password"
+		};
+		
+            console.log(formData);
+           
+	}
+
 export interface Env {
 	// If you set another name in wrangler.toml as the value for 'binding',
 	// replace "DB" with the variable name you defined.
