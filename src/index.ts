@@ -63,10 +63,7 @@ export default {
 		const [username, password] = decodedCredentials.split(':');
 
 		// 验证凭据
-		if (
-			username !== FrontEndAdminID ||
-			password !== FrontEndAdminPassword
-		) {
+		if (username !== FrontEndAdminID ) {
 			return new Response('Unauthorized', {
 				status: 401,
 				headers: {
