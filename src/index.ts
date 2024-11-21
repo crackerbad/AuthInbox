@@ -23,10 +23,6 @@ export interface Env {
 }
 
 export default {
-
-	async getcode(message): Promise<Response> {
-		return new Response('formData ', message);
-	},
 	async fetch(request: Request, env: Env, ctx: ExecutionContext): Promise<Response> {
 		// 将依赖 env 的常量移到函数内部
 		const FrontEndAdminID = env.FrontEndAdminID;
@@ -63,7 +59,10 @@ export default {
 		const [username, password] = decodedCredentials.split(':');
 
 		// 验证凭据
-		if (username !== FrontEndAdminID ) {
+		if (
+			username !== FrontEndAdminID ||
+			password !== FrontEndAdminPassword
+		) {
 			return new Response('Unauthorized', {
 				status: 401,
 				headers: {
